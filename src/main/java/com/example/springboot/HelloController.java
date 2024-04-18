@@ -11,4 +11,9 @@ public class HelloController {
         return "index";
     }
 
+    @GetMapping("/app")
+    public String app() {
+        return "index";
+    }
+
 }
