@@ -7,13 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @GetMapping("/")
-    public String index() {
-        return "index";
-    }
-
-    @GetMapping("/app")
-    public String app() {
-        return "index";
+    public String greeting() {
+        return "Welcome to the Spring Boot Application! Click here to go to the <a href='/index.html'>Main page</a>.";
     }
 
 }
